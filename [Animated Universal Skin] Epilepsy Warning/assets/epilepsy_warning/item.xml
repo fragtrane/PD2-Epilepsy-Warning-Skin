@@ -1,0 +1,20 @@
+<ugcitem>
+	<param key="name" value="epilepsy_warning"/>
+	<param key="type" value="weapon_skin"/>
+	<node name="data">
+		<param key="base_gradient_name" value="base_gradient.tga"/>
+		<param key="pattern_gradient_name" value="pattern_gradient.tga"/>
+		<param key="pattern_name" value="pattern.tga"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<!-- Default Lower Receiver (CAR-4, AMCAR, AMR-16, Para, Akimbo Para) -->
+			<node name="wpn_fps_m4_lower_reciever">
+				<node name="6e91ed22414b0c28">
+					<param key="sticker_name" value="stk_warning.tga"/>
+					<param key="uv_scale" value="Vector3(4.82514, 4.82514, 1)"/>
+					<param key="uv_offset_rot" value="Vector3(0.278313, 0.750298, 0)"/>
+				</node>
+			</node>
+		</node>
+	</node>
+</ugcitem>

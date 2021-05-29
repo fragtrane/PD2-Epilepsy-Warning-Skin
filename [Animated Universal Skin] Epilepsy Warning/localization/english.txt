@@ -1,0 +1,4 @@
+{
+	"bm_wskn_epilepsy_warning" : "Epilepsy Warning (Animated)",
+	"bm_wskn_epilepsy_legacy" : "Epilepsy Warning Legacy (Animated)"
+}

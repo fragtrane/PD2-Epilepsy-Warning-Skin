@@ -1,0 +1,51 @@
+<mod name="[Animated Universal Skin] Epilepsy Warning" author="fragtrane" min_lib_version="3.38">
+	<AssetUpdates provider="github" id="fragtrane/PD2-Epilepsy-Warning-Skin" version_file="$ModPath$/version.txt" release="true"/>
+	
+	<Localization directory="localization" default="english.txt"/>
+	
+	<WeaponSkin
+		id="epilepsy_warning"
+		weapon_id="universal"
+		name="bm_wskn_epilepsy_warning"
+		universal="true"
+		skin_folder="assets/epilepsy_warning"
+	/>
+	
+	<WeaponSkin id="epilepsy_legacy" is_a_color_skin="true" pattern_scale="2">
+		<color_skin_data
+			base_default="epilepsy_legacy/base_gradient"
+			base_metal="epilepsy_legacy/base_gradient"
+			base_plastic="epilepsy_legacy/base_gradient"
+			base_half="epilepsy_legacy/base_gradient"
+			base_half_02="epilepsy_legacy/base_gradient"
+			base_detail="epilepsy_legacy/base_gradient"
+			base_variation="epilepsy_legacy/base_gradient"
+			pattern_default="epilepsy_legacy/pattern"
+			gradient_default="epilepsy_legacy/pattern_gradient"
+		/>
+	</WeaponSkin>
+	
+	<Hooks>
+		<hook file="hooks/setup.lua" source_file="lib/managers/menumanager"/>
+		<hook file="hooks/playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+	</Hooks>
+	
+	<Sounds directory="sounds">
+		<sound id="ewj_alone"/>
+		<sound id="ewj_astronomia"/>
+		<sound id="ewj_bangarang"/>
+		<sound id="ewj_crab"/>
+		<sound id="ewj_levels"/>
+		<sound id="ewj_ravers"/>
+		<sound id="ewj_sax"/>
+		<sound id="ewj_tremor"/>
+	</Sounds>
+	
+	<AddFiles directory="assets">
+		<dds path="guis/dlcs/epilepsy_warning/weapon_skins/epilepsy_warning"/>
+		<dds path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapon_color/epilepsy_legacy"/>
+		<tga path="epilepsy_legacy/base_gradient"/>
+		<tga path="epilepsy_legacy/pattern"/>
+		<tga path="epilepsy_legacy/pattern_gradient"/>
+	</AddFiles>
+</table>
